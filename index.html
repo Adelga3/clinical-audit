@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/jawad/Downloads/index%20(5).html -->
+<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منصة المراجعة الإكلينيكية — مجموعة المدينة الصحية</title>
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+:root{--navy:#0a1628;--navy2:#0f2040;--blue:#1a3a6b;--accent:#00b4d8;--accent2:#0077b6;--gold:#f4a261;--green:#06d6a0;--red:#ef476f;--yellow:#ffd166;--text:#e8edf5;--muted:#7a8ba8;--card:rgba(15,32,64,0.9);--border:rgba(0,180,216,0.15);--glow:rgba(0,180,216,0.08)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--navy);color:var(--text);min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,180,216,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,180,216,0.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
+.header{position:sticky;top:0;z-index:100;background:rgba(10,22,40,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.header-brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.header-logo{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,var(--accent2),var(--accent));display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#fff;box-shadow:0 0 20px rgba(0,180,216,0.4)}
+.header-title{font-size:14px;font-weight:600}
+.header-sub{font-size:10px;color:var(--muted)}
+.header-nav{display:flex;gap:2px}
+.nav-btn{padding:5px 14px;border-radius:6px;font-size:12px;font-family:inherit;cursor:pointer;border:1px solid transparent;color:var(--muted);background:transparent;transition:all .2s}
+.nav-btn:hover,.nav-btn.active{background:var(--glow);color:var(--accent);border-color:var(--border)}
+.live-badge{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--green);font-family:'IBM Plex Mono'}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.main{padding:20px 24px;max-width:1600px;margin:0 auto;position:relative;z-index:1}
+.page{display:none}.page.active{display:block}
+/* FILTERS */
+.filters{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;margin-bottom:20px;flex-wrap:wrap}
+.filter-label{font-size:11px;color:var(--muted)}
+.filter-select,.search-box{background:rgba(0,0,0,0.3);border:1px solid var(--border);color:var(--text);border-radius:7px;padding:6px 11px;font-family:inherit;font-size:12px;cursor:pointer;outline:none;transition:border-color .2s}
+.filter-select:focus,.search-box:focus{border-color:var(--accent)}
+.search-box{min-width:180px}.search-box::placeholder{color:var(--muted)}
+/* STATS */
+.stats-row{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:20px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;position:relative;overflow:hidden;transition:transform .2s,border-color .2s;cursor:default}
+.stat-card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.stat-icon{font-size:20px;margin-bottom:8px}
+.stat-val{font-size:28px;font-weight:700;line-height:1;font-family:'IBM Plex Mono'}
+.stat-label{font-size:11px;color:var(--muted);margin-top:3px}
+.stat-delta{display:inline-flex;align-items:center;gap:3px;font-size:10px;margin-top:6px;padding:2px 7px;border-radius:10px;font-family:'IBM Plex Mono'}
+.up{background:rgba(6,214,160,.12);color:var(--green)}.dn{background:rgba(239,71,111,.12);color:var(--red)}.nt{background:rgba(122,139,168,.12);color:var(--muted)}
+/* GRID */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px}
+.grid-21{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:16px}
+/* CARD */
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:16px}
+.card-header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--border)}
+.card-title{font-size:13px;font-weight:600;display:flex;align-items:center;gap:7px}
+.card-badge{font-size:10px;font-family:'IBM Plex Mono';background:rgba(0,180,216,.12);color:var(--accent);border:1px solid rgba(0,180,216,.3);border-radius:4px;padding:2px 6px}
+.card-body{padding:16px 18px}
+/* BAR */
+.bar-chart{display:flex;flex-direction:column;gap:9px}
+.bar-row{display:flex;align-items:center;gap:8px}
+.bar-label{font-size:11px;color:var(--muted);width:100px;text-align:right;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{flex:1;height:7px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--accent2),var(--accent));transition:width .8s ease}
+.bar-fill.g{background:linear-gradient(90deg,#048a6a,var(--green))}
+.bar-fill.o{background:linear-gradient(90deg,#c47a3a,var(--gold))}
+.bar-fill.r{background:linear-gradient(90deg,#c0294e,var(--red))}
+.bar-val{font-size:11px;font-family:'IBM Plex Mono';width:55px;text-align:left;color:var(--text)}
+/* KPI */
+.kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kpi-card{background:rgba(0,0,0,.2);border:1px solid var(--border);border-radius:7px;padding:12px}
+.kpi-name{font-size:10px;color:var(--muted);margin-bottom:4px}
+.kpi-val{font-size:22px;font-weight:700;font-family:'IBM Plex Mono'}
+.kpi-sub{font-size:10px;color:var(--muted);margin-top:2px}
+.blue{color:var(--accent)}.good{color:var(--green)}.warn{color:var(--gold)}.bad{color:var(--red)}
+/* TABLE */
+.tbl-wrap{overflow-x:auto;max-height:460px;overflow-y:auto}
+.tbl{width:100%;border-collapse:collapse;font-size:11px}
+.tbl th{position:sticky;top:0;z-index:2;background:var(--navy2);color:var(--muted);padding:8px 11px;text-align:right;border-bottom:1px solid var(--border);white-space:nowrap;font-weight:500}
+.tbl td{padding:8px 11px;border-bottom:1px solid rgba(255,255,255,.04);white-space:nowrap;color:var(--text)}
+.tbl tr:hover td{background:rgba(0,180,216,.04)}
+.tbl tr:last-child td{border-bottom:none}
+.mono{font-family:'IBM Plex Mono';font-size:11px}
+.code{font-family:'IBM Plex Mono';font-size:11px;color:var(--accent)}
+/* BADGE */
+.badge{display:inline-block;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:500}
+.bg{background:rgba(6,214,160,.12);color:var(--green)}
+.br{background:rgba(239,71,111,.12);color:var(--red)}
+.bm{background:rgba(122,139,168,.12);color:var(--muted)}
+.bo{background:rgba(244,162,97,.12);color:var(--gold)}
+.bb{background:rgba(0,180,216,.12);color:var(--accent)}
+/* PROG TABS */
+.prog-tabs{display:flex;gap:4px;flex-wrap:wrap;padding:10px 16px;border-bottom:1px solid var(--border)}
+.prog-tab{padding:5px 13px;border-radius:6px;font-size:11px;font-family:inherit;cursor:pointer;border:1px solid transparent;color:var(--muted);background:transparent;transition:all .2s}
+.prog-tab:hover{color:var(--text);border-color:var(--border)}
+.prog-tab.active{background:rgba(0,180,216,.12);color:var(--accent);border-color:rgba(0,180,216,.4)}
+/* SECTION TITLE */
+.sec{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;margin-top:16px;display:flex;align-items:center;gap:8px}
+.sec::after{content:'';flex:1;height:1px;background:var(--border)}
+/* METRICS */
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.met{background:rgba(0,0,0,.2);border:1px solid var(--border);border-radius:7px;padding:12px;text-align:center}
+.met-num{font-size:24px;font-weight:700;font-family:'IBM Plex Mono';color:var(--accent)}
+.met-lbl{font-size:10px;color:var(--muted);margin-top:2px}
+/* LOADING */
+#loading{position:fixed;inset:0;background:var(--navy);display:flex;align-items:center;justify-content:center;z-index:999;flex-direction:column;gap:16px}
+.spin{width:40px;height:40px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+@media(max-width:900px){.stats-row{grid-template-columns:1fr 1fr}.grid-2,.grid-3,.grid-21{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}}
+
+
+/* ═══ EW ═══ */
+.ew-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.ew-sum-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center}
+.ew-sum-num{font-size:30px;font-weight:700;font-family:'IBM Plex Mono'}
+.ew-sum-lbl{font-size:11px;color:var(--muted);margin-top:3px}
+.ew-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ew-card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:transform .2s,border-color .2s}
+.ew-card:hover{transform:translateY(-2px)}
+.ew-card.crit{border-color:rgba(239,71,111,.55)}
+.ew-card.warn{border-color:rgba(255,209,102,.5)}
+.ew-card.ok{border-color:rgba(6,214,160,.3)}
+.ew-card.nd{opacity:.55}
+.ew-top{padding:12px 14px 8px;display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.ew-code{font-size:11px;font-family:'IBM Plex Mono';color:var(--accent);font-weight:700}
+.ew-hosp{font-size:10px;color:var(--muted);margin-top:2px;line-height:1.3}
+.ew-badge{font-size:10px;font-weight:600;padding:2px 9px;border-radius:10px;white-space:nowrap;flex-shrink:0}
+.eb-crit{background:rgba(239,71,111,.12);color:var(--red);border:1px solid rgba(239,71,111,.3)}
+.eb-warn{background:rgba(255,209,102,.12);color:var(--yellow);border:1px solid rgba(255,209,102,.3)}
+.eb-ok{background:rgba(6,214,160,.12);color:var(--green);border:1px solid rgba(6,214,160,.3)}
+.eb-nd{background:rgba(122,139,168,.1);color:var(--muted);border:1px solid rgba(122,139,168,.2)}
+.ew-body{padding:0 14px 12px}
+.ew-al{display:flex;align-items:flex-start;gap:7px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:11px;line-height:1.4}
+.ew-al:last-child{border-bottom:none}
+.al-ic{font-size:12px;flex-shrink:0;margin-top:1px}
+.al-tx{flex:1;color:var(--text)}
+.al-vl{font-family:'IBM Plex Mono';font-size:11px;font-weight:700;flex-shrink:0}
+.al-un{color:var(--red)}.al-ni{color:var(--yellow)}.al-ac{color:var(--accent)}.al-wc{color:var(--green)}
+.ew-filter{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:11px 16px;margin-bottom:18px;flex-wrap:wrap}
+.ew-legend{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;font-size:11px;align-items:center}
+.el{display:flex;align-items:center;gap:5px}
+.el-dot{width:9px;height:9px;border-radius:2px}
+@media(max-width:900px){.ew-grid{grid-template-columns:1fr 1fr}.ew-summary{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<div id="loading" style="display: none;">
+  <div class="spin"></div>
+  <div style="font-size:13px;color:var(--muted)">جاري تحميل البيانات...</div>
+</div>
+
+<header class="header">
+  <div class="header-brand">
+    <div class="header-logo">م</div>
+    <div>
+      <div class="header-title">منصة المراجعة الإكلينيكية</div>
+      <div class="header-sub" id="hdr-sub">مجموعة المدينة الصحية — 9 سجل</div>
+    </div>
+  </div>
+  <nav class="header-nav">
+    <button class="nav-btn active" onclick="gotoPage(&#39;overview&#39;,this)">نظرة عامة</button>
+    <button class="nav-btn" onclick="gotoPage(&#39;programs&#39;,this)">البرامج</button>
+    <button class="nav-btn" onclick="gotoPage(&#39;hospitals&#39;,this)">المستشفيات</button>
+    <button class="nav-btn" onclick="gotoPage(&#39;data&#39;,this)">البيانات</button>
+    <button class="nav-btn" onclick="gotoPage(&#39;warning&#39;,this)">🚨 إنذار مبكر</button>
+  </nav>
+  <div class="live-badge"><div class="live-dot"></div><span id="hdr-date">2026-03-02 01:16</span></div>
+</header>
+
+<main class="main">
+
+<!-- ════ OVERVIEW ════ -->
+<div id="page-overview" class="page active">
+  <div class="filters">
+    <span class="filter-label">الشهر:</span>
+    <select class="filter-select" id="f-month" onchange="renderOverview()">
+      <option value="Jan|2026">يناير 2026</option>
+      <option value="Feb|2026">فبراير 2026</option>
+      <option value="Dec|2025">ديسمبر 2025</option>
+    </select>
+    <span class="filter-label" style="margin-right:8px">المستشفى:</span>
+    <select class="filter-select" id="f-hosp" onchange="renderOverview()">
+      <option value="all">الكل</option>
+    <option value="MD-GEN-11">MD-GEN-11 — GEN-11 - Alhnakiyah General Hospital</option></select>
+  </div>
+  <div class="stats-row" id="ov-stats">
+    <div class="stat-card"><div class="stat-icon">🏥</div><div class="stat-val">1</div><div class="stat-label">مستشفى</div><div class="stat-delta nt">مجموعة المدينة</div></div>
+    <div class="stat-card"><div class="stat-icon">🚨</div><div class="stat-val">0</div><div class="stat-label">مرضى الطوارئ</div><div class="stat-delta nt">Jan 2026</div></div>
+    <div class="stat-card"><div class="stat-icon">🤱</div><div class="stat-val">0</div><div class="stat-label">إجمالي الولادات</div><div class="stat-delta nt">Jan 2026</div></div>
+    <div class="stat-card"><div class="stat-icon">👩‍⚕️</div><div class="stat-val">0</div><div class="stat-label">مرضى التمريض</div><div class="stat-delta nt">Jan 2026</div></div>
+    <div class="stat-card"><div class="stat-icon">🩺</div><div class="stat-val">0</div><div class="stat-label">حمل عالي الخطورة</div><div class="stat-delta nt">Jan 2026</div></div></div>
+  <div class="grid-21">
+    <div class="card">
+      <div class="card-header"><div class="card-title">🚨 الطوارئ — ED</div><div class="card-badge" id="ov-ed-badge">Jan 2026 — 0 مستشفى</div></div>
+      <div class="card-body" id="ov-ed">
+    <div class="kpi-grid" style="margin-bottom:14px">
+      <div class="kpi-card"><div class="kpi-name">إجمالي المرضى</div><div class="kpi-val blue">0</div><div class="kpi-sub">0 مستشفى</div></div>
+      <div class="kpi-card"><div class="kpi-name">وقت الباب للطبيب (متوسط)</div><div class="kpi-val good">0 <span style="font-size:12px;color:var(--muted)">دقيقة</span></div></div>
+      <div class="kpi-card"><div class="kpi-name">معالجون خلال 4 ساعات</div><div class="kpi-val good">0%</div><div class="kpi-sub">0 مريض</div></div>
+      <div class="kpi-card"><div class="kpi-name">وفيات</div><div class="kpi-val good">0</div><div class="kpi-sub">0% من المرضى</div></div>
+    </div>
+    <div class="sec">توزيع المآلات</div>
+    <div class="bar-chart">
+      <div class="bar-row"><div class="bar-label">خروج للمنزل</div><div class="bar-track"><div class="bar-fill g" style="width:0%"></div></div><div class="bar-val">0</div></div>
+      <div class="bar-row"><div class="bar-label">قبول بالجناح</div><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><div class="bar-val">0</div></div>
+      <div class="bar-row"><div class="bar-label">DAMA/LAMA</div><div class="bar-track"><div class="bar-fill o" style="width:0%"></div></div><div class="bar-val">0</div></div>
+      <div class="bar-row"><div class="bar-label">وفيات</div><div class="bar-track"><div class="bar-fill r" style="width:0%"></div></div><div class="bar-val">0</div></div>
+    </div>
+    <div class="sec" style="margin-top:14px">أعلى مستشفيات بعدد المرضى</div>
+    <div class="bar-chart">
+      
+    </div></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="card">
+        <div class="card-header"><div class="card-title">📋 البرامج</div></div>
+        <div class="card-body" id="ov-progs" style="padding:10px 16px"><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">
+      <span style="font-size:12px">🫀 AICU</span>
+      <span class="badge bm">لا حالات</span>
+    </div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">
+      <span style="font-size:12px">❤️ CPR</span>
+      <span class="badge bm">لا حالات</span>
+    </div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">
+      <span style="font-size:12px">📊 CSMR</span>
+      <span class="badge bm">لا حالات</span>
+    </div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">
+      <span style="font-size:12px">🚨 ED</span>
+      <span class="badge bm">لا حالات</span>
+    </div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">
+      <span style="font-size:12px">🩺 HRP</span>
+      <span class="badge bm">لا حالات</span>
+    </div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">
+      <span style="font-size:12px">🤱 Mcare</span>
+      <span class="badge bm">لا حالات</span>
+    </div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">
+      <span style="font-size:12px">🍼 NICU</span>
+      <span class="badge bm">لا حالات</span>
+    </div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">
+      <span style="font-size:12px">👩‍⚕️ Nursing</span>
+      <span class="badge bm">لا حالات</span>
+    </div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">
+      <span style="font-size:12px">👶 PICU</span>
+      <span class="badge bm">لا حالات</span>
+    </div><div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">
+      <span style="font-size:12px">🩸 VTE</span>
+      <span class="badge bm">لا حالات</span>
+    </div></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-title">🤱 Mcare</div></div>
+        <div class="card-body" id="ov-mcare">
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-name">إجمالي الولادات</div><div class="kpi-val blue">0</div></div>
+      <div class="kpi-card"><div class="kpi-name">قيصرية CS</div><div class="kpi-val warn">0</div><div class="kpi-sub">0%</div></div>
+      <div class="kpi-card"><div class="kpi-name">KPI1 Skin-to-Skin</div><div class="kpi-val good">0%</div></div>
+      <div class="kpi-card"><div class="kpi-name">عدد المستشفيات</div><div class="kpi-val blue">0</div></div>
+    </div></div>
+      </div>
+    </div>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header"><div class="card-title">👩‍⚕️ التمريض</div></div>
+      <div class="card-body" id="ov-nrs">
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-name">إجمالي المرضى</div><div class="kpi-val blue">0</div></div>
+      <div class="kpi-card"><div class="kpi-name">سقوط المرضى</div><div class="kpi-val good">0</div></div>
+      <div class="kpi-card"><div class="kpi-name">أيام الرعاية</div><div class="kpi-val blue">0</div></div>
+      <div class="kpi-card"><div class="kpi-name">قرح المرحلة 2+</div><div class="kpi-val good">0</div></div>
+    </div></div>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-title">🩺 الحمل عالي الخطورة</div></div>
+      <div class="card-body" id="ov-hrp">
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-name">إجمالي ANC</div><div class="kpi-val blue">0</div></div>
+      <div class="kpi-card"><div class="kpi-name">الثلث الأول</div><div class="kpi-val blue">0</div></div>
+      <div class="kpi-card"><div class="kpi-name">الثلث الثاني</div><div class="kpi-val warn">0</div></div>
+      <div class="kpi-card"><div class="kpi-name">الثلث الثالث</div><div class="kpi-val warn">0</div></div>
+    </div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ PROGRAMS ════ -->
+<div id="page-programs" class="page">
+  <div class="card" style="margin-bottom:0">
+    <div class="prog-tabs" id="pg-tabs"><button class="prog-tab active" onclick="switchProg(&#39;AICU&#39;,this)">🫀 AICU</button><button class="prog-tab " onclick="switchProg(&#39;CPR&#39;,this)">❤️ CPR</button><button class="prog-tab " onclick="switchProg(&#39;CSMR&#39;,this)">📊 CSMR</button><button class="prog-tab " onclick="switchProg(&#39;ED&#39;,this)">🚨 ED</button><button class="prog-tab " onclick="switchProg(&#39;HRP&#39;,this)">🩺 HRP</button><button class="prog-tab " onclick="switchProg(&#39;Mcare&#39;,this)">🤱 Mcare</button><button class="prog-tab " onclick="switchProg(&#39;NICU&#39;,this)">🍼 NICU</button><button class="prog-tab " onclick="switchProg(&#39;Nursing&#39;,this)">👩‍⚕️ Nursing</button><button class="prog-tab " onclick="switchProg(&#39;PICU&#39;,this)">👶 PICU</button><button class="prog-tab " onclick="switchProg(&#39;VTE&#39;,this)">🩸 VTE</button></div>
+    <div id="pg-content" style="padding:16px 18px"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+    <div><div style="font-size:20px">🚨 الطوارئ</div>
+    <div style="font-size:11px;color:var(--muted);margin-top:2px">1 سجل — 1 مستشفى — 1 شهر</div></div>
+  </div><div class="sec">ملخص الطوارئ</div>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr>
+      <th>المستشفى</th><th>الشهر</th><th>المرضى</th><th>وقت الباب/طبيب</th><th>معالجة &lt;4hr</th><th>قبول جناح</th><th>وفيات</th><th>DAMA</th>
+    </tr></thead><tbody>
+    <tr>
+      <td class="code">MD-GEN-11</td>
+      <td><span class="badge bo">Dec 2025</span></td>
+      <td class="mono">8,564</td>
+      <td class="mono good">17 دق</td>
+      <td class="mono good">100%</td>
+      <td class="mono">151</td>
+      <td class="mono bad">6</td>
+      <td class="mono">112</td>
+    </tr>
+    </tbody></table></div></div>
+  </div>
+</div>
+
+<!-- ════ HOSPITALS ════ -->
+<div id="page-hospitals" class="page">
+  <div class="filters">
+    <span class="filter-label">الشهر:</span>
+    <select class="filter-select" id="h-month" onchange="renderHospitals()">
+      <option value="Jan|2026">يناير 2026</option>
+      <option value="Feb|2026">فبراير 2026</option>
+      <option value="Dec|2025">ديسمبر 2025</option>
+    </select>
+    <input class="search-box" placeholder="بحث عن مستشفى..." oninput="filterHosp(this.value)">
+  </div>
+  <div class="card">
+    <div class="tbl-wrap">
+      <table class="tbl"><thead id="h-head"><tr>
+    <th>الكود</th><th>المستشفى</th><th>الطوارئ</th><th>الولادات</th><th>التمريض</th><th>HRP</th><th>AICU</th><th>البرامج المُرسلة</th><th>الحالة</th>
+  </tr></thead><tbody id="h-body"><tr>
+      <td class="code">MD-GEN-11</td>
+      <td style="font-size:11px">GEN-11 - Alhnakiyah General Hospital</td>
+      <td class="mono bm">—</td>
+      <td class="mono">—</td>
+      <td class="mono">—</td>
+      <td class="mono">—</td>
+      <td class="mono">—</td>
+      <td></td>
+      <td><span class="badge bm">لا بيانات</span></td>
+    </tr></tbody></table>
+    </div>
+  </div>
+</div>
+
+<!-- ════ DATA ════ -->
+<div id="page-data" class="page">
+  <div class="filters">
+    <span class="filter-label">البرنامج:</span>
+    <select class="filter-select" id="dt-prog" onchange="renderData()">
+      <option value="ALL">الكل</option>
+      <option>AICU</option><option>CPR</option><option>CSMR</option>
+      <option>ED</option><option>HRP</option><option>Mcare</option>
+      <option>NICU</option><option>Nursing</option><option>PICU</option><option>VTE</option>
+    </select>
+    <span class="filter-label">الشهر:</span>
+    <select class="filter-select" id="dt-month" onchange="renderData()">
+      <option value="all">الكل</option>
+      <option value="Jan|2026">يناير 2026</option>
+      <option value="Feb|2026">فبراير 2026</option>
+      <option value="Dec|2025">ديسمبر 2025</option>
+    </select>
+    <input class="search-box" placeholder="بحث..." oninput="searchDt(this.value)">
+    <span style="margin-right:auto;font-size:11px;color:var(--muted)" id="dt-cnt">9 سجل</span>
+  </div>
+  <div class="card">
+    <div class="tbl-wrap">
+      <table class="tbl"><thead id="dt-head"><tr><th>Program</th><th>Facility Name</th><th>Facility Code</th><th>Month</th><th>Year</th><th>KPI1 ROSC Survived pct</th><th>KPI1 Numerator</th><th>KPI1 Denominator</th><th>KPI2 Survived Discharge</th><th>KPI2 Numerator</th><th>KPI2 Denominator</th><th>VT Total Events</th><th>VT ROSC</th><th>VT Survived Discharge</th><th>VT Deaths</th><th>VF Total Events</th><th>VF ROSC</th><th>VF Survived Discharge</th><th>VF Deaths</th><th>Tachyarrhythmia Events</th><th>PEA Events</th><th>Bradycardia Events</th><th>Asystole Events</th><th>AMI Total Admission</th><th>AMI Discharge</th><th>AMI Transfer</th><th>AMI Expired</th><th>AMI StillAdmitted</th><th>CAP Total Admission</th><th>CAP Discharge</th><th>CAP Transfer</th><th>CAP Expired</th><th>CAP StillAdmitted</th><th>CVA Total Admission</th><th>CVA Discharge</th><th>CVA Transfer</th><th>CVA Expired</th><th>CVA StillAdmitted</th><th>HipFracture Total</th><th>HipFracture Discharge</th><th>HipFracture Expired</th><th>ED Total Patients</th><th>ED Total Deceased</th><th>ED DoorToDoctor avg min</th><th>ED DoctorToDecision avg min</th><th>ED DecisionToDisp avg min</th><th>ED NonUrgent</th><th>ED DAMA</th><th>ED LAMA</th><th>ED AICU Admission</th><th>ED PICU Admission</th><th>ED NICU Admission</th><th>ED Ward Admission</th><th>ED Referred UCC</th><th>ED Referred Other</th><th>ED Discharged Home</th><th>ED Return 72hr</th><th>ED Treated within 4hr</th><th>ED Treated 4 6hr</th><th>ED Treated 6 12hr</th><th>ED Treated 12 24hr</th><th>ED Treated 24 48hr</th><th>ED Treated 48 72hr</th><th>ED Treated over72hr</th><th>ED Admit AICU 30min</th><th>ED Admit PICU 30min</th><th>ED Admit NICU 30min</th><th>ED Admit Ward 30min</th><th>PainKiller under30min</th><th>PainKiller 30 60min</th><th>Pethidine 50mg</th><th>Pethidine 100mg</th><th>Sepsis Adult Total</th><th>Sepsis Adult Treated 1hr</th><th>Sepsis Adult Deaths</th><th>Sepsis Peds Total</th><th>Sepsis Peds Treated 1hr</th><th>AMI Total</th><th>AMI ECG 10min</th><th>AMI STEMI Fibrinolysis</th><th>AMI Deaths ED</th><th>HighRisk 1st trimester</th><th>HighRisk 2nd trimester</th><th>HighRisk 3rd trimester</th><th>Total HighRisk ANC</th><th>KPI1 pct</th><th>Total Deliveries</th><th>Saudi</th><th>Non Saudi</th><th>Booked</th><th>Un Booked</th><th>Delivered 37plus</th><th>Delivered less37</th><th>SkinToSkin 5min 1hr</th><th>Breastfed 1hr</th><th>Vaginal Delivery</th><th>CS Delivery</th><th>FirstTime CS</th><th>Previous CS</th><th>Elective CS</th><th>KPI1 SkinToSkin pct</th><th>KPI2 Breastfed pct</th><th>KPI3 CS Rate</th><th>KPI3 Numerator</th><th>KPI3 Denominator</th><th>KPI4 ElectiveCS Rate</th><th>KPI4 Numerator</th><th>KPI4 Denominator</th><th>Total Admissions</th><th>Total Patient Falls</th><th>Total Inpatient Days</th><th>Ulcer Stage1</th><th>Ulcer Stage2</th><th>Ulcer Stage3</th><th>Ulcer Stage4</th><th>Ulcer Unstageable</th><th>Total Ulcers excl Stage1</th><th>KPI PressureUlcer Rate</th><th>KPI PatientFall Rate</th><th>Planned Extubations</th><th>Unplanned Extubations</th><th>Ventilator Days</th><th>ReIntubation 48hr</th><th>Admissions</th><th>ICU Readmission 48hr</th><th>Discharge Alive</th><th>Transfer In</th><th>Transfer Out</th><th>Expired</th><th>DAMA</th><th>KPI1 Readmission pct</th><th>KPI2 Unplanned Extub rate</th><th>KPI3 ReIntubation pct</th></tr></thead><tbody id="dt-body"><tr><td><span class="badge bb">CPR</span></td><td style="font-size:11px">MD-GEN-11 - Alhnakiyah General Hospital</td><td class="code">MD-GEN-11</td><td><span class="badge bo">Dec</span></td><td><span class="badge bo">2025</span></td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td></tr><tr><td><span class="badge bb">CSMR</span></td><td style="font-size:11px">MD-GEN-11 - Alhnakiyah General Hospital</td><td class="code">MD-GEN-11</td><td><span class="badge bo">Dec</span></td><td><span class="badge bo">2025</span></td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td></tr><tr><td><span class="badge bb">ED</span></td><td style="font-size:11px">MD-GEN-11 - Alhnakiyah General Hospital</td><td class="code">MD-GEN-11</td><td><span class="badge bo">Dec</span></td><td><span class="badge bo">2025</span></td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td class="mono">8,564</td><td class="mono">6</td><td class="mono">17</td><td class="mono">27.2</td><td class="mono">26.2</td><td class="mono">7,207</td><td class="mono">112</td><td class="mono">112</td><td class="mono">17</td><td class="mono">0</td><td class="mono">4</td><td class="mono">151</td><td class="mono">0</td><td class="mono">47</td><td class="mono">8,304</td><td class="mono">0</td><td class="mono">8,564</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">17</td><td class="mono">0</td><td class="mono">4</td><td class="mono">151</td><td class="mono">25</td><td class="mono">25</td><td class="mono">11</td><td class="mono">14</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">1</td><td class="mono">1</td><td class="mono">0</td><td class="mono">0</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td></tr><tr><td><span class="badge bb">HRP</span></td><td style="font-size:11px">MD-GEN-11 - Alhnakiyah General Hospital</td><td class="code">MD-GEN-11</td><td><span class="badge bo">Dec</span></td><td><span class="badge bo">2025</span></td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td class="mono">4</td><td class="mono">0</td><td class="mono">0</td><td class="mono">4</td><td class="mono">1</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td></tr><tr><td><span class="badge bb">Mcare</span></td><td style="font-size:11px">MD-GEN-11 - Alhnakiyah General Hospital</td><td class="code">MD-GEN-11</td><td><span class="badge bo">Dec</span></td><td><span class="badge bo">2025</span></td><td style="color:var(--muted)">—</td><td class="mono">18</td><td class="mono">18</td><td style="color:var(--muted)">—</td><td class="mono">12</td><td class="mono">18</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td class="mono">21</td><td class="mono">15</td><td class="mono">6</td><td class="mono">7</td><td class="mono">14</td><td class="mono">18</td><td class="mono">3</td><td class="mono">18</td><td class="mono">12</td><td class="mono">16</td><td class="mono">5</td><td class="mono">4</td><td class="mono">17</td><td class="mono">0</td><td class="mono">1</td><td class="mono">67%</td><td class="mono">24%</td><td class="mono">5</td><td class="mono">21</td><td class="mono">0</td><td class="mono">0</td><td class="mono">4</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td></tr><tr><td><span class="badge bb">NICU</span></td><td style="font-size:11px">MD-GEN-11 - Alhnakiyah General Hospital</td><td class="code">MD-GEN-11</td><td><span class="badge bo">Dec</span></td><td><span class="badge bo">2025</span></td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td></tr><tr><td><span class="badge bb">Nursing</span></td><td style="font-size:11px">MD-GEN-11 - Alhnakiyah General Hospital</td><td class="code">MD-GEN-11</td><td><span class="badge bo">Dec</span></td><td><span class="badge bo">2025</span></td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td class="mono">86</td><td class="mono">0</td><td class="mono">121</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td></tr><tr><td><span class="badge bb">PICU</span></td><td style="font-size:11px">MD-GEN-11 - Alhnakiyah General Hospital</td><td class="code">MD-GEN-11</td><td><span class="badge bo">Dec</span></td><td><span class="badge bo">2025</span></td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td class="mono">0</td><td style="font-size:11px">Percentage of patients readmitted to the ICU within 48 hours of discharge</td><td style="font-size:11px">Unplanned Extubations rate</td><td style="font-size:11px">Percentage of Re-Intubation within 48 hours of extubation</td></tr><tr><td><span class="badge bb">VTE</span></td><td style="font-size:11px">MD-GEN-11 - Alhnakiyah General Hospital</td><td class="code">MD-GEN-11</td><td><span class="badge bo">Dec</span></td><td><span class="badge bo">2025</span></td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td><td style="color:var(--muted)">—</td></tr></tbody></table>
+    </div>
+  </div>
+</div>
+
+  <div class="cmp-prog-tabs" id="cpt-tabs"></div>
+  <div id="cmp-body"></div>
+
+
+  <div class="ew-grid" id="ew-grid"></div>
+
+
+<!-- ════ PAGE: EARLY WARNING ════ -->
+<div id="page-warning" class="page">
+  <div class="ew-filter">
+    <span class="filter-label">الشهر:</span>
+    <select class="filter-select" id="ew-month" onchange="renderWarning()">
+      <option value="Jan|2026">يناير 2026</option>
+      <option value="Feb|2026">فبراير 2026</option>
+      <option value="Dec|2025">ديسمبر 2025</option>
+    </select>
+    <span style="margin-right:auto;font-size:11px;color:var(--muted)">المؤشرات مبنية على تعريفات KPI من ملفات Excel (ED Definitions / Sepsis / AMI / Nursing)</span>
+  </div>
+  <div class="ew-summary" id="ew-summary"></div>
+  <div class="ew-legend">
+    <span class="el"><span class="el-dot" style="background:var(--red)"></span>⛔ يحتاج تدخل فوري (Unacceptable)</span>
+    <span class="el"><span class="el-dot" style="background:var(--yellow)"></span>⚠️ يحتاج مراجعة (Needs Improvement)</span>
+    <span class="el"><span class="el-dot" style="background:var(--accent)"></span>مقبول (Acceptable)</span>
+    <span class="el"><span class="el-dot" style="background:var(--green)"></span>ممتاز (World Class)</span>
+  </div>
+  <div class="ew-grid" id="ew-grid"></div>
+</div>
+
+</main>
+
+<script src="./index_files/data.js"></script>
+<script>
+// ══════════════════════════════════════
+//  GLOBALS
+// ══════════════════════════════════════
+const VALID_PROGS = ['AICU','CPR','CSMR','ED','HRP','Mcare','NICU','Nursing','PICU','VTE'];
+const PROG_ICON  = {ED:'🚨',Mcare:'🤱',HRP:'🩺',AICU:'🫀',PICU:'👶',NICU:'🍼',Nursing:'👩‍⚕️',CPR:'❤️',CSMR:'📊',VTE:'🩸'};
+const PROG_NAME  = {ED:'الطوارئ',Mcare:'رعاية الأمومة',HRP:'الحمل عالي الخطورة',AICU:'العناية المركزة',PICU:'العناية الطفلية',NICU:'حديثو الولادة',Nursing:'جودة التمريض',CPR:'الإنعاش القلبي',CSMR:'معدلات الوفيات',VTE:'الجلطات الوريدية'};
+let D = {};
+
+function init(){
+  if(typeof DASHBOARD_DATA==='undefined'){
+    document.getElementById('loading').innerHTML='<div style="color:var(--red);font-size:14px">⚠️ لم يتم تحميل data.js</div>';
+    return;
+  }
+  // Load only valid programs
+  VALID_PROGS.forEach(p=>{ if(DASHBOARD_DATA[p]) D[p]=DASHBOARD_DATA[p]; });
+  const meta = DASHBOARD_DATA._meta||{};
+  document.getElementById('hdr-sub').textContent=`مجموعة المدينة الصحية — ${meta.total_records||0} سجل`;
+  document.getElementById('hdr-date').textContent=meta.generated||'';
+
+  // Populate hospital filter
+  const hosps = getHospitals();
+  const sel = document.getElementById('f-hosp');
+  hosps.forEach(([code,name])=>{
+    const o=document.createElement('option');
+    o.value=code; o.textContent=`${code} — ${name.replace(/^[^-]+-\s*/,'')}`;
+    sel.appendChild(o);
+  });
+
+  document.getElementById('loading').style.display='none';
+  renderOverview();
+  renderProgTabs();
+  renderHospitals();
+  renderData();
+}
+
+function getHospitals(){
+  const map={};
+  VALID_PROGS.forEach(p=>{
+    (D[p]||[]).forEach(r=>{
+      if(r.Facility_Code&&r.Facility_Name) map[r.Facility_Code]=r.Facility_Name;
+    });
+  });
+  return Object.entries(map).sort((a,b)=>a[0].localeCompare(b[0]));
+}
+
+function filterMonth(rows, mv){
+  const [m,y] = mv.split('|');
+  return rows.filter(r=>String(r.Month)===m&&String(r.Year)===y);
+}
+
+function sumField(rows,field){
+  let s=0; rows.forEach(r=>{ const v=parseFloat(r[field]); if(!isNaN(v)&&v>0) s+=v; }); return Math.round(s);
+}
+function avg(rows,field){
+  let s=0,c=0; rows.forEach(r=>{ const v=parseFloat(r[field]); if(!isNaN(v)&&v>0){s+=v;c++;} }); return c?+(s/c).toFixed(1):0;
+}
+function pct(n,d){ return d?Math.round(n/d*100):0; }
+function fmt(n){ if(n===null||n===undefined||isNaN(n)) return '—'; return Number.isInteger(n)?n.toLocaleString('en'):(+n).toLocaleString('en'); }
+
+// ══════════════════════════════════════
+//  OVERVIEW
+// ══════════════════════════════════════
+function renderOverview(){
+  const mv  = document.getElementById('f-month').value;
+  const hf  = document.getElementById('f-hosp').value;
+  const [m,y]= mv.split('|');
+
+  function getRows(prog){
+    let rows = filterMonth(D[prog]||[], mv);
+    if(hf!=='all') rows=rows.filter(r=>r.Facility_Code===hf);
+    return rows;
+  }
+
+  const edRows  = getRows('ED');
+  const mcRows  = getRows('Mcare');
+  const nrsRows = getRows('Nursing');
+  const hrpRows = getRows('HRP');
+
+  const totalED   = sumField(edRows,'ED_Total_Patients');
+  const totalDel  = sumField(mcRows,'Total_Deliveries');
+  const totalAdm  = sumField(nrsRows,'Total_Admissions');
+  const totalHRP  = sumField(hrpRows,'Total_HighRisk_ANC');
+  const hosps     = hf==='all' ? getHospitals().length : 1;
+
+  // STATS ROW
+  document.getElementById('ov-stats').innerHTML=`
+    <div class="stat-card"><div class="stat-icon">🏥</div><div class="stat-val">${hosps}</div><div class="stat-label">مستشفى</div><div class="stat-delta nt">مجموعة المدينة</div></div>
+    <div class="stat-card"><div class="stat-icon">🚨</div><div class="stat-val">${fmt(totalED)}</div><div class="stat-label">مرضى الطوارئ</div><div class="stat-delta nt">${m} ${y}</div></div>
+    <div class="stat-card"><div class="stat-icon">🤱</div><div class="stat-val">${fmt(totalDel)}</div><div class="stat-label">إجمالي الولادات</div><div class="stat-delta nt">${m} ${y}</div></div>
+    <div class="stat-card"><div class="stat-icon">👩‍⚕️</div><div class="stat-val">${fmt(totalAdm)}</div><div class="stat-label">مرضى التمريض</div><div class="stat-delta nt">${m} ${y}</div></div>
+    <div class="stat-card"><div class="stat-icon">🩺</div><div class="stat-val">${fmt(totalHRP)}</div><div class="stat-label">حمل عالي الخطورة</div><div class="stat-delta nt">${m} ${y}</div></div>`;
+
+  // ED PANEL
+  const edBadge = document.getElementById('ov-ed-badge');
+  edBadge.textContent = `${m} ${y} — ${edRows.length} مستشفى`;
+  const totalDec  = sumField(edRows,'ED_Total_Deceased');
+  const totalDis  = sumField(edRows,'ED_Discharged_Home');
+  const totalWard = sumField(edRows,'ED_Ward_Admission');
+  const totalDAMA = sumField(edRows,'ED_DAMA');
+  const avgDoor   = avg(edRows,'ED_DoorToDoctor_avg_min');
+  const treated4  = sumField(edRows,'ED_Treated_within_4hr');
+  document.getElementById('ov-ed').innerHTML=`
+    <div class="kpi-grid" style="margin-bottom:14px">
+      <div class="kpi-card"><div class="kpi-name">إجمالي المرضى</div><div class="kpi-val blue">${fmt(totalED)}</div><div class="kpi-sub">${edRows.length} مستشفى</div></div>
+      <div class="kpi-card"><div class="kpi-name">وقت الباب للطبيب (متوسط)</div><div class="kpi-val ${avgDoor<=20?'good':'warn'}">${avgDoor} <span style="font-size:12px;color:var(--muted)">دقيقة</span></div></div>
+      <div class="kpi-card"><div class="kpi-name">معالجون خلال 4 ساعات</div><div class="kpi-val good">${pct(treated4,totalED)}%</div><div class="kpi-sub">${fmt(treated4)} مريض</div></div>
+      <div class="kpi-card"><div class="kpi-name">وفيات</div><div class="kpi-val ${totalDec===0?'good':'bad'}">${fmt(totalDec)}</div><div class="kpi-sub">${pct(totalDec,totalED)}% من المرضى</div></div>
+    </div>
+    <div class="sec">توزيع المآلات</div>
+    <div class="bar-chart">
+      <div class="bar-row"><div class="bar-label">خروج للمنزل</div><div class="bar-track"><div class="bar-fill g" style="width:${pct(totalDis,totalED)}%"></div></div><div class="bar-val">${fmt(totalDis)}</div></div>
+      <div class="bar-row"><div class="bar-label">قبول بالجناح</div><div class="bar-track"><div class="bar-fill" style="width:${Math.min(pct(totalWard,totalED)*5,100)}%"></div></div><div class="bar-val">${fmt(totalWard)}</div></div>
+      <div class="bar-row"><div class="bar-label">DAMA/LAMA</div><div class="bar-track"><div class="bar-fill o" style="width:${Math.min(pct(totalDAMA,totalED)*10,100)}%"></div></div><div class="bar-val">${fmt(totalDAMA)}</div></div>
+      <div class="bar-row"><div class="bar-label">وفيات</div><div class="bar-track"><div class="bar-fill r" style="width:${Math.min(pct(totalDec,totalED)*50,100)}%"></div></div><div class="bar-val">${fmt(totalDec)}</div></div>
+    </div>
+    <div class="sec" style="margin-top:14px">أعلى مستشفيات بعدد المرضى</div>
+    <div class="bar-chart">
+      ${edRows.filter(r=>r.ED_Total_Patients>0).sort((a,b)=>b.ED_Total_Patients-a.ED_Total_Patients).slice(0,6).map(r=>`
+      <div class="bar-row">
+        <div class="bar-label" title="${r.Facility_Name}">${r.Facility_Code}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${pct(r.ED_Total_Patients,edRows[0]?Math.max(...edRows.map(x=>x.ED_Total_Patients||0)):1)}%"></div></div>
+        <div class="bar-val">${fmt(r.ED_Total_Patients)}</div>
+      </div>`).join('')}
+    </div>`;
+
+  // MCARE
+  const totDel = sumField(mcRows,'Total_Deliveries');
+  const totCS  = sumField(mcRows,'CS_Delivery');
+  const totSTS = sumField(mcRows,'SkinToSkin_5min_1hr');
+  document.getElementById('ov-mcare').innerHTML=`
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-name">إجمالي الولادات</div><div class="kpi-val blue">${fmt(totDel)}</div></div>
+      <div class="kpi-card"><div class="kpi-name">قيصرية CS</div><div class="kpi-val warn">${fmt(totCS)}</div><div class="kpi-sub">${pct(totCS,totDel)}%</div></div>
+      <div class="kpi-card"><div class="kpi-name">KPI1 Skin-to-Skin</div><div class="kpi-val good">${pct(totSTS,totDel)}%</div></div>
+      <div class="kpi-card"><div class="kpi-name">عدد المستشفيات</div><div class="kpi-val blue">${mcRows.length}</div></div>
+    </div>`;
+
+  // NURSING
+  const totFalls = sumField(nrsRows,'Total_Patient_Falls');
+  const totUlc   = sumField(nrsRows,'Total_Ulcers_excl_Stage1');
+  const totDays  = sumField(nrsRows,'Total_Inpatient_Days');
+  document.getElementById('ov-nrs').innerHTML=`
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-name">إجمالي المرضى</div><div class="kpi-val blue">${fmt(totalAdm)}</div></div>
+      <div class="kpi-card"><div class="kpi-name">سقوط المرضى</div><div class="kpi-val ${totFalls===0?'good':'bad'}">${fmt(totFalls)}</div></div>
+      <div class="kpi-card"><div class="kpi-name">أيام الرعاية</div><div class="kpi-val blue">${fmt(totDays)}</div></div>
+      <div class="kpi-card"><div class="kpi-name">قرح المرحلة 2+</div><div class="kpi-val ${totUlc===0?'good':'bad'}">${fmt(totUlc)}</div></div>
+    </div>`;
+
+  // HRP
+  const tot1 = sumField(hrpRows,'HighRisk_1st_trimester');
+  const tot2 = sumField(hrpRows,'HighRisk_2nd_trimester');
+  const tot3 = sumField(hrpRows,'HighRisk_3rd_trimester');
+  document.getElementById('ov-hrp').innerHTML=`
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-name">إجمالي ANC</div><div class="kpi-val blue">${fmt(totalHRP)}</div></div>
+      <div class="kpi-card"><div class="kpi-name">الثلث الأول</div><div class="kpi-val blue">${fmt(tot1)}</div></div>
+      <div class="kpi-card"><div class="kpi-name">الثلث الثاني</div><div class="kpi-val warn">${fmt(tot2)}</div></div>
+      <div class="kpi-card"><div class="kpi-name">الثلث الثالث</div><div class="kpi-val warn">${fmt(tot3)}</div></div>
+    </div>`;
+
+  // PROGRAMS STATUS
+  document.getElementById('ov-progs').innerHTML=VALID_PROGS.map(p=>{
+    const rows = filterMonth(D[p]||[], mv);
+    const hasData = rows.some(r=>Object.keys(r).length>6);
+    return `<div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">
+      <span style="font-size:12px">${PROG_ICON[p]} ${p}</span>
+      <span class="badge ${hasData?'bg':'bm'}">${hasData?rows.length+' مستشفى':'لا حالات'}</span>
+    </div>`;
+  }).join('');
+}
+
+// ══════════════════════════════════════
+//  PROGRAMS PAGE
+// ══════════════════════════════════════
+let curProg='ED';
+function renderProgTabs(){
+  document.getElementById('pg-tabs').innerHTML=VALID_PROGS.map((p,i)=>
+    `<button class="prog-tab ${i===0?'active':''}" onclick="switchProg('${p}',this)">${PROG_ICON[p]} ${p}</button>`
+  ).join('');
+  renderProg();
+}
+function switchProg(p,btn){
+  curProg=p;
+  document.querySelectorAll('.prog-tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  renderProg();
+}
+function renderProg(){
+  const p   = curProg;
+  const rows= D[p]||[];
+  const el  = document.getElementById('pg-content');
+  if(!rows.length){el.innerHTML=`<div style="text-align:center;padding:40px;color:var(--muted)">${PROG_ICON[p]} لا بيانات لبرنامج ${p}</div>`;return;}
+
+  // All months comparison table
+  const months = [...new Set(rows.map(r=>`${r.Month}|${r.Year}`))].sort();
+  const hospitals = [...new Set(rows.map(r=>r.Facility_Code))].sort();
+  const dataKeys = Object.keys(rows[0]).filter(k=>!['Facility_Name','Facility_Code','Health_Cluster','Month','Year','Source_File','Data_Collector','All_Data_Entered'].includes(k));
+
+  let html=`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+    <div><div style="font-size:20px">${PROG_ICON[p]} ${PROG_NAME[p]}</div>
+    <div style="font-size:11px;color:var(--muted);margin-top:2px">${rows.length} سجل — ${hospitals.length} مستشفى — ${months.length} شهر</div></div>
+  </div>`;
+
+  if(p==='ED'){
+    // Summary per hospital per month
+    html+=`<div class="sec">ملخص الطوارئ</div>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr>
+      <th>المستشفى</th><th>الشهر</th><th>المرضى</th><th>وقت الباب/طبيب</th><th>معالجة &lt;4hr</th><th>قبول جناح</th><th>وفيات</th><th>DAMA</th>
+    </tr></thead><tbody>
+    ${rows.filter(r=>r.ED_Total_Patients).sort((a,b)=>(b.ED_Total_Patients||0)-(a.ED_Total_Patients||0)).map(r=>`<tr>
+      <td class="code">${r.Facility_Code}</td>
+      <td><span class="badge bo">${r.Month} ${r.Year}</span></td>
+      <td class="mono">${fmt(r.ED_Total_Patients)}</td>
+      <td class="mono ${(r.ED_DoorToDoctor_avg_min||0)<=20?'good':'warn'}">${fmt(r.ED_DoorToDoctor_avg_min)} دق</td>
+      <td class="mono good">${pct(r.ED_Treated_within_4hr,r.ED_Total_Patients)}%</td>
+      <td class="mono">${fmt(r.ED_Ward_Admission)}</td>
+      <td class="mono ${(r.ED_Total_Deceased||0)===0?'good':'bad'}">${fmt(r.ED_Total_Deceased)}</td>
+      <td class="mono">${fmt(r.ED_DAMA)}</td>
+    </tr>`).join('')}
+    </tbody></table></div>`;
+  } else if(p==='Mcare'){
+    html+=`<div class="sec">ملخص رعاية الأمومة</div>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr>
+      <th>المستشفى</th><th>الشهر</th><th>الولادات</th><th>قيصرية</th><th>KPI1 STS</th><th>KPI2 رضاعة</th><th>KPI3 CS Rate</th>
+    </tr></thead><tbody>
+    ${rows.filter(r=>r.Total_Deliveries).map(r=>`<tr>
+      <td class="code">${r.Facility_Code}</td>
+      <td><span class="badge bo">${r.Month} ${r.Year}</span></td>
+      <td class="mono">${fmt(r.Total_Deliveries)}</td>
+      <td class="mono">${fmt(r.CS_Delivery)} (${pct(r.CS_Delivery,r.Total_Deliveries)}%)</td>
+      <td class="mono ${(r.KPI1_SkinToSkin_pct||0)>=0.8?'good':'warn'}">${r.KPI1_SkinToSkin_pct!=null?Math.round(r.KPI1_SkinToSkin_pct*100)+'%':'—'}</td>
+      <td class="mono">${r.KPI2_Breastfed_pct!=null?Math.round(r.KPI2_Breastfed_pct*100)+'%':'—'}</td>
+      <td class="mono">${r.KPI3_CS_Rate!=null?Math.round(r.KPI3_CS_Rate*100)+'%':'—'}</td>
+    </tr>`).join('')}
+    </tbody></table></div>`;
+  } else if(p==='Nursing'){
+    html+=`<div class="sec">ملخص جودة التمريض</div>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr>
+      <th>المستشفى</th><th>الشهر</th><th>المرضى</th><th>أيام الرعاية</th><th>سقوط</th><th>قرح 2+</th><th>معدل السقوط</th><th>معدل القرح</th>
+    </tr></thead><tbody>
+    ${rows.map(r=>`<tr>
+      <td class="code">${r.Facility_Code}</td>
+      <td><span class="badge bo">${r.Month} ${r.Year}</span></td>
+      <td class="mono">${fmt(r.Total_Admissions)}</td>
+      <td class="mono">${fmt(r.Total_Inpatient_Days)}</td>
+      <td class="mono ${(r.Total_Patient_Falls||0)===0?'good':'bad'}">${fmt(r.Total_Patient_Falls)}</td>
+      <td class="mono ${(r.Total_Ulcers_excl_Stage1||0)===0?'good':'bad'}">${fmt(r.Total_Ulcers_excl_Stage1)}</td>
+      <td class="mono">${r.KPI_PatientFall_Rate!=null?r.KPI_PatientFall_Rate:'—'}</td>
+      <td class="mono">${r.KPI_PressureUlcer_Rate!=null?r.KPI_PressureUlcer_Rate:'—'}</td>
+    </tr>`).join('')}
+    </tbody></table></div>`;
+  } else if(p==='HRP'){
+    html+=`<div class="sec">ملخص الحمل عالي الخطورة</div>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr>
+      <th>المستشفى</th><th>الشهر</th><th>الثلث الأول</th><th>الثلث الثاني</th><th>الثلث الثالث</th><th>إجمالي ANC</th><th>KPI1</th>
+    </tr></thead><tbody>
+    ${rows.map(r=>`<tr>
+      <td class="code">${r.Facility_Code}</td>
+      <td><span class="badge bo">${r.Month} ${r.Year}</span></td>
+      <td class="mono">${fmt(r.HighRisk_1st_trimester)}</td>
+      <td class="mono">${fmt(r.HighRisk_2nd_trimester)}</td>
+      <td class="mono">${fmt(r.HighRisk_3rd_trimester)}</td>
+      <td class="mono">${fmt(r.Total_HighRisk_ANC)}</td>
+      <td class="mono ${(r.KPI1_pct||0)>=0.8?'good':'warn'}">${r.KPI1_pct!=null?Math.round(r.KPI1_pct*100)+'%':'—'}</td>
+    </tr>`).join('')}
+    </tbody></table></div>`;
+  } else {
+    // Generic table for other programs
+    html+=`<div class="sec">بيانات ${PROG_NAME[p]}</div>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr>
+      <th>المستشفى</th><th>الشهر</th>
+      ${dataKeys.slice(0,10).map(k=>`<th>${k.replace(/_/g,' ')}</th>`).join('')}
+    </tr></thead><tbody>
+    ${rows.map(r=>`<tr>
+      <td class="code">${r.Facility_Code||'—'}</td>
+      <td><span class="badge bo">${r.Month||'—'} ${r.Year||''}</span></td>
+      ${dataKeys.slice(0,10).map(k=>{
+        const v=r[k];
+        if(v===null||v===undefined) return '<td style="color:var(--muted)">—</td>';
+        if(typeof v==='number'&&v<1&&v>0) return `<td class="mono">${Math.round(v*100)}%</td>`;
+        return `<td class="mono">${fmt(v)}</td>`;
+      }).join('')}
+    </tr>`).join('')}
+    </tbody></table></div>`;
+  }
+  el.innerHTML=html;
+}
+
+// ══════════════════════════════════════
+//  HOSPITALS PAGE
+// ══════════════════════════════════════
+function renderHospitals(){
+  const mv = document.getElementById('h-month').value;
+  const hospitals = getHospitals();
+  document.getElementById('h-head').innerHTML=`<tr>
+    <th>الكود</th><th>المستشفى</th><th>الطوارئ</th><th>الولادات</th><th>التمريض</th><th>HRP</th><th>AICU</th><th>البرامج المُرسلة</th><th>الحالة</th>
+  </tr>`;
+  document.getElementById('h-body').innerHTML=hospitals.map(([code,name])=>{
+    const getV=(prog,field)=>{
+      const r=(filterMonth(D[prog]||[],mv)).find(x=>x.Facility_Code===code);
+      return r?r[field]:null;
+    };
+    const edV   = getV('ED','ED_Total_Patients');
+    const mcV   = getV('Mcare','Total_Deliveries');
+    const nrsV  = getV('Nursing','Total_Admissions');
+    const hrpV  = getV('HRP','Total_HighRisk_ANC');
+    const aicuV = getV('AICU','Admissions');
+    const sent  = VALID_PROGS.filter(p=>filterMonth(D[p]||[],mv).some(r=>r.Facility_Code===code));
+    const complete = sent.length>=7;
+    return `<tr>
+      <td class="code">${code}</td>
+      <td style="font-size:11px">${name.replace(/^[^-]+-\s*/,'')}</td>
+      <td class="mono ${edV?'':'bm'}">${edV!=null?fmt(edV):'—'}</td>
+      <td class="mono">${mcV!=null?fmt(mcV):'—'}</td>
+      <td class="mono">${nrsV!=null?fmt(nrsV):'—'}</td>
+      <td class="mono">${hrpV!=null?fmt(hrpV):'—'}</td>
+      <td class="mono">${aicuV!=null?fmt(aicuV):'—'}</td>
+      <td>${sent.map(p=>`<span class="badge bb" style="margin:1px">${p}</span>`).join('')}</td>
+      <td><span class="badge ${complete?'bg':sent.length>0?'bo':'bm'}">${complete?'✓ مكتمل':sent.length>0?sent.length+'/'+VALID_PROGS.length:'لا بيانات'}</span></td>
+    </tr>`;
+  }).join('');
+}
+function filterHosp(q){
+  document.querySelectorAll('#h-body tr').forEach(r=>{
+    r.style.display=r.textContent.toLowerCase().includes(q.toLowerCase())?'':'none';
+  });
+}
+
+// ══════════════════════════════════════
+//  DATA PAGE
+// ══════════════════════════════════════
+function renderData(){
+  const prog = document.getElementById('dt-prog').value;
+  const mv   = document.getElementById('dt-month').value;
+  let rows=[];
+  if(prog==='ALL'){
+    VALID_PROGS.forEach(p=>(D[p]||[]).forEach(r=>rows.push({Program:p,...r})));
+  } else {
+    rows=(D[prog]||[]).map(r=>({...r}));
+  }
+  if(mv!=='all'){
+    const [m,y]=mv.split('|');
+    rows=rows.filter(r=>String(r.Month)===m&&String(r.Year)===y);
+  }
+  const skip=['Source_File','Data_Collector','All_Data_Entered','Health_Cluster'];
+  const keys=[...new Set(rows.flatMap(r=>Object.keys(r)))].filter(k=>!skip.includes(k));
+  document.getElementById('dt-head').innerHTML='<tr>'+keys.map(k=>`<th>${k.replace(/_/g,' ')}</th>`).join('')+'</tr>';
+  document.getElementById('dt-body').innerHTML=rows.map(r=>'<tr>'+keys.map(k=>{
+    const v=r[k];
+    if(v===null||v===undefined) return '<td style="color:var(--muted)">—</td>';
+    if(k==='Program') return `<td><span class="badge bb">${v}</span></td>`;
+    if(k==='Facility_Code') return `<td class="code">${v}</td>`;
+    if(k==='Month'||k==='Year') return `<td><span class="badge bo">${v}</span></td>`;
+    if(typeof v==='number'&&v<1&&v>0) return `<td class="mono">${Math.round(v*100)}%</td>`;
+    if(typeof v==='number') return `<td class="mono">${fmt(v)}</td>`;
+    return `<td style="font-size:11px">${v}</td>`;
+  }).join('')+'</tr>').join('');
+  document.getElementById('dt-cnt').textContent=`${rows.length} سجل`;
+}
+function searchDt(q){
+  document.querySelectorAll('#dt-body tr').forEach(r=>{
+    r.style.display=r.textContent.toLowerCase().includes(q.toLowerCase())?'':'none';
+  });
+}
+
+// ══════════════════════════════════════
+//  NAV
+// ══════════════════════════════════════
+function gotoPage(name,btn){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if(name==='warning') renderWarning();
+}
+
+
+// ══════════════════════════════════════
+// EARLY WARNING SYSTEM
+// Benchmarks from KPI Definitions sheets
+// ══════════════════════════════════════
+var EW_RULES = [
+  // ── ED KPIs Definitions ──────────────────────────────────────────────
+  { prog:'ED', id:'d2d',
+    label:'باب للطبيب (Door to Doctor)',
+    bench:'<10دق ممتاز | 10-20 مقبول | 20-40 يحتاج | >40 غير مقبول',
+    icon:'⏱️',
+    get: function(r){
+      var v=r.ED_DoorToDoctor_avg_min;
+      return (v!=null && v>0 && v<2000)?+v.toFixed(1):null; // >2000 = total mins not avg
+    },
+    grade: function(v){ return v<10?'wc':v<=20?'ac':v<=40?'ni':'un'; }
+  },
+  { prog:'ED', id:'dtd',
+    label:'طبيب للقرار (Doctor to Decision)',
+    bench:'<30دق ممتاز | 30-60 مقبول | 60-90 يحتاج | >90 غير مقبول',
+    icon:'🩺',
+    get: function(r){
+      var v=r.ED_DoctorToDecision_avg_min;
+      return (v!=null && v>0 && v<5000)?+v.toFixed(1):null;
+    },
+    grade: function(v){ return v<30?'wc':v<=60?'ac':v<=90?'ni':'un'; }
+  },
+  { prog:'ED', id:'d2disp',
+    label:'قرار للتصرف (Decision to Disposition)',
+    bench:'<30دق ممتاز | 30-90 مقبول | 90-130 يحتاج | >130 غير مقبول',
+    icon:'🚪',
+    get: function(r){
+      var v=r.ED_DecisionToDisp_avg_min;
+      return (v!=null && v>0 && v<5000)?+v.toFixed(1):null;
+    },
+    grade: function(v){ return v<30?'wc':v<=90?'ac':v<=130?'ni':'un'; }
+  },
+  { prog:'ED', id:'t4hr',
+    label:'معالجة خلال 4 ساعات',
+    bench:'>95% ممتاز | 75-95% مقبول | 60-75% يحتاج | <60% غير مقبول',
+    icon:'✅',
+    get: function(r){
+      if(!r.ED_Total_Patients||r.ED_Total_Patients<=0) return null;
+      return Math.round((r.ED_Treated_within_4hr||0)/r.ED_Total_Patients*100);
+    },
+    grade: function(v){ return v>95?'wc':v>=75?'ac':v>=60?'ni':'un'; }
+  },
+  { prog:'ED', id:'nonurg',
+    label:'% غير طارئ (CTAS 4-5)',
+    bench:'<33% ممتاز | 33-50% مقبول | 50-75% يحتاج | >75% غير مقبول',
+    icon:'👤',
+    get: function(r){
+      if(!r.ED_Total_Patients||r.ED_Total_Patients<=0) return null;
+      return Math.round((r.ED_NonUrgent||0)/r.ED_Total_Patients*100);
+    },
+    grade: function(v){ return v<33?'wc':v<=50?'ac':v<=75?'ni':'un'; }
+  },
+  // ── Sepsis Definitions ──────────────────────────────────────────────
+  // "Proportion of patients who accessed acute care of Sepsis within 1 hour"
+  // Benchmark: ALL sub-KPIs completed within 1 hour = 100% target
+  { prog:'ED', id:'sep1hr',
+    label:'🦠 Sepsis — معالجة خلال ساعة (1-hr bundle)',
+    bench:'100% مثالي | >80% مقبول | 60-80% يحتاج | <60% غير مقبول',
+    icon:'🦠',
+    get: function(r){
+      var t=r.Sepsis_Adult_Total; var tr=r.Sepsis_Adult_Treated_1hr;
+      if(t==null||t<=0||tr==null) return null;
+      return Math.round(tr/t*100);
+    },
+    grade: function(v){ return v>=100?'wc':v>=80?'ac':v>=60?'ni':'un'; }
+  },
+  { prog:'ED', id:'sepmort',
+    label:'Sepsis — وفيات',
+    bench:'0 ممتاز | أي وفاة = إنذار',
+    icon:'💔',
+    get: function(r){
+      var d=r.Sepsis_Adult_Deaths;
+      return (d!=null&&r.Sepsis_Adult_Total>0)?d:null;
+    },
+    grade: function(v){ return v===0?'wc':v<=1?'ni':'un'; }
+  },
+  // ── AMI Definitions ──────────────────────────────────────────────
+  // "Proportion of patients who accessed acute care of AMI within specific time"
+  // Sub-KPI 1: Door to ECG < 10 min = Benchmark
+  { prog:'ED', id:'amiecg',
+    label:'❤️ AMI — ECG خلال 10 دقائق',
+    bench:'100% ممتاز | >90% مقبول | <75% غير مقبول',
+    icon:'❤️',
+    get: function(r){
+      var t=r.AMI_Total; var e=r.AMI_ECG_10min;
+      if(t==null||t<=0||e==null) return null;
+      return Math.round(e/t*100);
+    },
+    grade: function(v){ return v>=100?'wc':v>=90?'ac':v>=75?'ni':'un'; }
+  },
+  { prog:'ED', id:'amimort',
+    label:'AMI — وفيات في الطوارئ',
+    bench:'0 ممتاز | أي وفاة = إنذار',
+    icon:'💔',
+    get: function(r){
+      var d=r.AMI_Deaths_ED;
+      return (d!=null&&r.AMI_Total>0)?d:null;
+    },
+    grade: function(v){ return v===0?'wc':v<=1?'ni':'un'; }
+  },
+  // ── USR Definition ──────────────────────────────────────────────
+  // Unscheduled Return to ED within 72 hours — Benchmark <5%
+  { prog:'ED', id:'usr',
+    label:'عودة غير مخططة خلال 72 ساعة',
+    bench:'<2% ممتاز | 2-5% مقبول | 5-8% يحتاج | >8% غير مقبول',
+    icon:'🔄',
+    get: function(r){
+      // Handle both USR rate field and raw count
+      if(r.ED_USR_rate!=null) return +(r.ED_USR_rate*100).toFixed(1);
+      if(!r.ED_Total_Patients||r.ED_Total_Patients<=0) return null;
+      var ret=r.ED_Return_72hr;
+      return ret!=null ? +(ret/r.ED_Total_Patients*100).toFixed(1) : null;
+    },
+    grade: function(v){ return v<2?'wc':v<=5?'ac':v<=8?'ni':'un'; }
+  },
+  { prog:'ED', id:'mort',
+    label:'معدل الوفيات في الطوارئ',
+    bench:'صفر وفيات = مثالي | أي وفاة تُراقب',
+    icon:'📊',
+    get: function(r){
+      if(!r.ED_Total_Patients||r.ED_Total_Patients<=0) return null;
+      return +(r.ED_Total_Deceased/r.ED_Total_Patients*100).toFixed(2);
+    },
+    grade: function(v){ return v===0?'wc':v<=0.1?'ac':v<=0.5?'ni':'un'; }
+  },
+  { prog:'ED', id:'dama',
+    label:'نسبة DAMA + LAMA',
+    bench:'<2% مقبول | 2-5% يحتاج مراجعة | >5% غير مقبول',
+    icon:'🚶',
+    get: function(r){
+      if(!r.ED_Total_Patients||r.ED_Total_Patients<=0) return null;
+      return +(((r.ED_DAMA||0)+(r.ED_LAMA||0))/r.ED_Total_Patients*100).toFixed(1);
+    },
+    grade: function(v){ return v<2?'wc':v<=5?'ac':v<=8?'ni':'un'; }
+  },
+  // ── Mcare KPI Definitions ──────────────────────────────────────────────
+  { prog:'Mcare', id:'sts',
+    label:'KPI1 Skin-to-Skin خلال ساعة',
+    bench:'>95% ممتاز | 80-95% مقبول | 65-80% يحتاج | <65% غير مقبول',
+    icon:'👶',
+    get: function(r){
+      return r.KPI1_SkinToSkin_pct!=null?Math.round(r.KPI1_SkinToSkin_pct*100):null;
+    },
+    grade: function(v){ return v>95?'wc':v>=80?'ac':v>=65?'ni':'un'; }
+  },
+  { prog:'Mcare', id:'bf',
+    label:'KPI2 رضاعة طبيعية خلال ساعة',
+    bench:'>90% ممتاز | 70-90% مقبول | 50-70% يحتاج | <50% غير مقبول',
+    icon:'🤱',
+    get: function(r){
+      return r.KPI2_Breastfed_pct!=null?Math.round(r.KPI2_Breastfed_pct*100):null;
+    },
+    grade: function(v){ return v>90?'wc':v>=70?'ac':v>=50?'ni':'un'; }
+  },
+  { prog:'Mcare', id:'csr',
+    label:'KPI3 معدل العمليات القيصرية',
+    bench:'<25% ممتاز | 25-30% مقبول | 30-40% يحتاج | >40% غير مقبول',
+    icon:'🏥',
+    get: function(r){
+      return r.KPI3_CS_Rate!=null?Math.round(r.KPI3_CS_Rate*100):null;
+    },
+    grade: function(v){ return v<25?'wc':v<=30?'ac':v<=40?'ni':'un'; }
+  },
+  // ── AICU KPI Definitions ──────────────────────────────────────────────
+  { prog:'AICU', id:'icu_ra',
+    label:'AICU — إعادة الدخول خلال 48 ساعة',
+    bench:'<2% ممتاز | 2-5% مقبول | 5-10% يحتاج | >10% غير مقبول',
+    icon:'🫀',
+    get: function(r){
+      return r.Admissions>0?+(r.ICU_Readmission_48hr/r.Admissions*100).toFixed(1):null;
+    },
+    grade: function(v){ return v<2?'wc':v<=5?'ac':v<=10?'ni':'un'; }
+  },
+  { prog:'AICU', id:'unext',
+    label:'AICU — فطام غير مخطط',
+    bench:'<1% ممتاز | 1-3% مقبول | 3-5% يحتاج | >5% غير مقبول',
+    icon:'💨',
+    get: function(r){
+      return r.Planned_Extubations>0?+(r.Unplanned_Extubations/r.Planned_Extubations*100).toFixed(1):null;
+    },
+    grade: function(v){ return v<1?'wc':v<=3?'ac':v<=5?'ni':'un'; }
+  },
+  // ── Nursing KPI Definitions ──────────────────────────────────────────────
+  { prog:'Nursing', id:'falls',
+    label:'معدل سقوط المرضى (لكل 1000 يوم)',
+    bench:'<0.5‰ ممتاز | 0.5-1‰ مقبول | 1-2‰ يحتاج | >2‰ غير مقبول',
+    icon:'🩹',
+    get: function(r){
+      return r.Total_Inpatient_Days>0?+(r.Total_Patient_Falls/r.Total_Inpatient_Days*1000).toFixed(2):null;
+    },
+    grade: function(v){ return v<0.5?'wc':v<=1?'ac':v<=2?'ni':'un'; }
+  },
+  { prog:'Nursing', id:'ulcer',
+    label:'معدل قرح الفراش Stage2+ (لكل 1000 يوم)',
+    bench:'<0.5‰ ممتاز | 0.5-1‰ مقبول | 1-2‰ يحتاج | >2‰ غير مقبول',
+    icon:'🩺',
+    get: function(r){
+      return r.Total_Inpatient_Days>0?+(r.Total_Ulcers_excl_Stage1/r.Total_Inpatient_Days*1000).toFixed(3):null;
+    },
+    grade: function(v){ return v<0.5?'wc':v<=1?'ac':v<=2?'ni':'un'; }
+  },
+  // ── CPR KPI Definitions ──────────────────────────────────────────────
+  { prog:'CPR', id:'rosc',
+    label:'CPR — معدل ROSC >20 دقيقة',
+    bench:'>40% ممتاز | 25-40% مقبول | 15-25% يحتاج | <15% غير مقبول',
+    icon:'❤️‍🔥',
+    get: function(r){
+      return r.KPI1_Denominator>0?Math.round(r.KPI1_Numerator/r.KPI1_Denominator*100):null;
+    },
+    grade: function(v){ return v>40?'wc':v>=25?'ac':v>=15?'ni':'un'; }
+  },
+  // ── HRP KPI Definitions ──────────────────────────────────────────────
+  { prog:'HRP', id:'hrp1',
+    label:'HRP — تسجيل الثلث الأول (مبكر)',
+    bench:'>90% ممتاز | 75-90% مقبول | 60-75% يحتاج | <60% غير مقبول',
+    icon:'🤰',
+    get: function(r){
+      return r.KPI1_pct!=null?Math.round(r.KPI1_pct*100):null;
+    },
+    grade: function(v){ return v>90?'wc':v>=75?'ac':v>=60?'ni':'un'; }
+  },
+  // ── VTE Definitions — KPI1: Assessment Rate Benchmark >95% ──────────
+  { prog:'VTE', id:'vte_kpi1',
+    label:'VTE — تقييم المخاطر عند الدخول (KPI1)',
+    bench:'>95% ممتاز | 90-95% مقبول | 80-90% يحتاج | <80% غير مقبول',
+    icon:'🩸',
+    get: function(r){
+      var v=r.KPI1_Assessment_Rate;
+      if(v!=null) return Math.round(v*100);
+      if(r.VTE_Files_Audited>0&&r.VTE_Assessed_Form!=null)
+        return Math.round(r.VTE_Assessed_Form/r.VTE_Files_Audited*100);
+      return null;
+    },
+    grade: function(v){ return v>95?'wc':v>=90?'ac':v>=80?'ni':'un'; }
+  },
+  // ── VTE KPI2: Appropriate Prophylaxis — Benchmark 100% ──────────────
+  { prog:'VTE', id:'vte_kpi2',
+    label:'VTE — الوقاية المناسبة لحالات الخطورة (KPI2)',
+    bench:'100% ممتاز | 95-99% مقبول | 85-95% يحتاج | <85% غير مقبول',
+    icon:'💊',
+    get: function(r){
+      var v=r.KPI2_Prophylaxis_Rate;
+      if(v!=null) return Math.round(v*100);
+      if(r.VTE_ModHigh_Risk>0&&r.VTE_Prophylaxis_Given!=null)
+        return Math.round(r.VTE_Prophylaxis_Given/r.VTE_ModHigh_Risk*100);
+      return null;
+    },
+    grade: function(v){ return v>=100?'wc':v>=95?'ac':v>=85?'ni':'un'; }
+  },
+  // ── VTE KPI3: Hospital-associated VTE Incidence — Benchmark <1.6/1000 ──
+  { prog:'VTE', id:'vte_kpi3',
+    label:'VTE — معدل الإصابة بالمستشفى (KPI3)',
+    bench:'<1.6 ممتاز | 1.6-2.5 يحتاج مراجعة | >2.5 غير مقبول',
+    icon:'🔬',
+    get: function(r){
+      var v=r.KPI3_Incidence_per1000;
+      return (v!=null)?+parseFloat(v).toFixed(2):null;
+    },
+    grade: function(v){ return v<1.6?'wc':v<=2.5?'ni':'un'; }
+  },
+  // ── VTE Deaths ────────────────────────────────────────────────────────
+  { prog:'VTE', id:'vte_deaths',
+    label:'VTE — وفيات مرتبطة بالجلطات',
+    bench:'0 وفيات = مثالي',
+    icon:'💔',
+    get: function(r){
+      return r.VTE_Deaths_Adult!=null?r.VTE_Deaths_Adult:null;
+    },
+    grade: function(v){ return v===0?'wc':v<=1?'ni':'un'; }
+  },
+  // ── Sepsis: عودة 72 ساعة — يُحسب من ED ─────────────────────────────
+  { prog:'ED', id:'sep_deaths',
+    label:'Sepsis — وفيات البالغين',
+    bench:'0 = مثالي | أي وفاة = إنذار',
+    icon:'☠️',
+    get: function(r){
+      var t=r.Sepsis_Adult_Total;
+      var d=r.Sepsis_Adult_Deaths;
+      return (t!=null&&t>0&&d!=null)?d:null;
+    },
+    grade: function(v){ return v===0?'wc':v<=1?'ni':'un'; }
+  },
+  // ── عودة للطوارئ 72 ساعة — تفصيل إضافي ────────────────────────────
+  { prog:'ED', id:'ret72_count',
+    label:'عدد حالات العودة للطوارئ <72 ساعة',
+    bench:'العودة >5% يحتاج تحقيق',
+    icon:'🔁',
+    get: function(r){
+      if(!r.ED_Total_Patients||r.ED_Total_Patients<=0) return null;
+      var ret=r.ED_Return_72hr;
+      if(ret==null||ret===0) return null; // لا داعي للإنذار إذا صفر
+      return +(ret/r.ED_Total_Patients*100).toFixed(1);
+    },
+    grade: function(v){ return v<2?'wc':v<=5?'ac':v<=8?'ni':'un'; }
+  }
+];
+
+function gradeLabel(g){
+  return {wc:'ممتاز',ac:'مقبول',ni:'يحتاج تحسين',un:'غير مقبول'}[g]||g;
+}
+function gradeFormat(v, rule){
+  var id=rule.id;
+  if(['falls','ulcer'].indexOf(id)>=0) return v+'‰';
+  if(['sepmort','amimort','amimort'].indexOf(id)>=0||id==='sepmort'||id==='amimort') return v+' حالة';
+  if(typeof v==='number' && v%1!==0) return v+'';
+  return v+'%';
+}
+
+function renderWarning(){
+  var mv = document.getElementById('ew-month').value;
+  var parts = mv.split('|'); var m=parts[0]; var y=parts[1];
+
+  // Build full hospital list
+  var hosps = {};
+  var VALID_PROG_LIST = ['ED','Mcare','Nursing','HRP','AICU','CPR','CSMR','PICU','NICU'];
+  VALID_PROG_LIST.forEach(function(prog){
+    (D[prog]||[]).forEach(function(r){
+      if(r.Facility_Code && r.Facility_Name && String(r.Month)===m && String(r.Year)===y){
+        hosps[r.Facility_Code.trim()] = r.Facility_Name.replace(/^[^-]+-\s*/,'');
+      }
+    });
+  });
+
+  var codes = Object.keys(hosps).sort();
+  var results = [];
+
+  codes.forEach(function(code){
+    var alerts = [];
+    var hasAnyData = false;
+
+    EW_RULES.forEach(function(rule){
+      var progRows = (D[rule.prog]||[]).filter(function(r){
+        return r.Facility_Code && r.Facility_Code.trim()===code && String(r.Month)===m && String(r.Year)===y;
+      });
+      if(!progRows.length) return;
+      var r = progRows[0];
+      hasAnyData = true;
+      var val = null;
+      try{ val = rule.get(r); } catch(e){}
+      if(val===null||val===undefined||isNaN(val)) return;
+      var grade = rule.grade(val);
+      if(grade==='wc') return;
+      alerts.push({ icon:rule.icon, label:rule.label, val:val, grade:grade, bench:rule.bench, fmtVal:gradeFormat(val,rule) });
+    });
+
+    // Sort critical first
+    alerts.sort(function(a,b){
+      var o={un:0,ni:1,ac:2}; return (o[a.grade]||3)-(o[b.grade]||3);
+    });
+
+    var hasCrit = alerts.some(function(a){return a.grade==='un';});
+    var hasNI   = alerts.some(function(a){return a.grade==='ni';});
+    var status  = !hasAnyData?'nd':alerts.length===0?'ok':hasCrit?'crit':'warn';
+    results.push({code:code, name:hosps[code], alerts:alerts, status:status, hasData:hasAnyData});
+  });
+
+  // Sort: crit → warn → ok → nd
+  results.sort(function(a,b){
+    var o={crit:0,warn:1,ok:2,nd:3}; return o[a.status]-o[b.status];
+  });
+
+  // Summary
+  var nCrit = results.filter(function(r){return r.status==='crit';}).length;
+  var nWarn = results.filter(function(r){return r.status==='warn';}).length;
+  var nOk   = results.filter(function(r){return r.status==='ok';}).length;
+  var nAl   = results.reduce(function(s,r){return s+r.alerts.filter(function(a){return a.grade==='un';}).length;},0);
+
+  document.getElementById('ew-summary').innerHTML =
+    '<div class="ew-sum-card"><div class="ew-sum-num" style="color:var(--red)">'+nCrit+'</div><div class="ew-sum-lbl">⛔ يحتاج تدخل فوري</div></div>'+
+    '<div class="ew-sum-card"><div class="ew-sum-num" style="color:var(--yellow)">'+nWarn+'</div><div class="ew-sum-lbl">⚠️ يحتاج مراجعة</div></div>'+
+    '<div class="ew-sum-card"><div class="ew-sum-num" style="color:var(--green)">'+nOk+'</div><div class="ew-sum-lbl">✅ أداء جيد</div></div>'+
+    '<div class="ew-sum-card"><div class="ew-sum-num" style="color:var(--red)">'+nAl+'</div><div class="ew-sum-lbl">إجمالي مخالفات حرجة</div></div>';
+
+  // Cards
+  document.getElementById('ew-grid').innerHTML = results.map(function(r){
+    var stMap = {crit:'⛔ تدخل فوري',warn:'⚠️ مراجعة',ok:'✅ جيد',nd:'— لا بيانات'};
+    var clMap = {crit:'eb-crit',warn:'eb-warn',ok:'eb-ok',nd:'eb-nd'};
+    return '<div class="ew-card '+r.status+'">'+
+      '<div class="ew-top">'+
+        '<div><div class="ew-code">'+r.code+'</div><div class="ew-hosp">'+r.name+'</div></div>'+
+        '<span class="ew-badge '+(clMap[r.status]||'eb-nd')+'">'+stMap[r.status]+'</span>'+
+      '</div>'+
+      '<div class="ew-body">'+
+        (r.alerts.length ?
+          r.alerts.map(function(a){
+            return '<div class="ew-al" title="'+a.bench+'">'+
+              '<span class="al-ic">'+a.icon+'</span>'+
+              '<span class="al-tx">'+a.label+'</span>'+
+              '<span class="al-vl al-'+a.grade+'">'+a.fmtVal+' <span style="font-size:9px;opacity:.7">'+gradeLabel(a.grade)+'</span></span>'+
+            '</div>';
+          }).join('') :
+          (r.hasData ?
+            '<div style="text-align:center;padding:14px;color:var(--green);font-size:12px">✓ جميع المؤشرات ضمن المعدل المقبول</div>' :
+            '<div style="text-align:center;padding:14px;color:var(--muted);font-size:11px">لا بيانات مُرسلة لهذا الشهر</div>'
+          )
+        )+
+      '</div>'+
+    '</div>';
+  }).join('');
+}
+
+// START
+window.addEventListener('load', init);
+</script>
+
+
+</body></html>
